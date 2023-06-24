@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Main">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:background="@color/BlueViolet">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tic Tac Toe"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
+    </Toolbar>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome to game"
+        android:textColor="@color/BlueViolet"
+        android:textSize="28dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="20sp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_gravity="center_horizontal"
+        android:rowCount="3"
+
+        tools:ignore="MissingConstraints" >
+        <Button
+            android:id="@+id/btn1"
+            android:onClick="settext"
+
+            android:textColor="@color/black"
+            android:background="@color/purple_200"
+            />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_marginLeft="11sp"
+            android:onClick="settext"
+            android:textColor="@color/black"
+            android:background="@color/purple_200"
+
+            />
+        <Button
+            android:id="@+id/btn3"
+            android:layout_marginLeft="11sp"
+            android:onClick="settext"
+            android:textColor="@color/black"
+            android:background="@color/purple_200"
+
+            />
+        <Button
+            android:id="@+id/btn4"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/black"
+            android:background="@color/purple_200"
+            android:onClick="settext"
+            />
+        <Button
+            android:id="@+id/btn5"
+            android:layout_marginTop="10sp"
+
+            android:textColor="@color/black"
+            android:background="@color/purple_200"
+            android:layout_marginLeft="11sp"
+            android:onClick="settext"
+            />
+        <Button
+            android:layout_marginLeft="11sp"
+            android:id="@+id/btn6"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/black"
+            android:background="@color/purple_200"
+            android:onClick="settext"
+            />
+        <Button
+            android:layout_marginTop="10sp"
+            android:onClick="settext"
+            android:textColor="@color/black"
+            android:background="@color/purple_200"
+            android:id="@+id/btn7"/>
+        <Button
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="11sp"
+            android:id="@+id/btn8"
+            android:textColor="@color/black"
+            android:background="@color/purple_200"
+            android:onClick="settext"
+            />
+        <Button
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="11sp"
+            android:onClick="settext"
+            android:textColor="@color/black"
+            android:background="@color/purple_200"
+
+            android:id="@+id/btn9"/>
+    </GridLayout>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="RESTART"
+    android:id="@+id/btn_restart"
+    android:layout_gravity="center"
+    android:layout_marginTop="15sp"
+    android:textColor="@color/black"
+    android:background="@color/SlateBlue" />
+</LinearLayout>

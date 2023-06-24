@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="Profile"
+            />
+        <item
+            android:id="@+id/_import"
+            android:title="import"
+            android:icon="@drawable/_import"/>
+        <item
+            android:id="@+id/slideshow"
+            android:title="Slide Show"
+            android:icon="@drawable/slideshow"/>
+        <item
+            android:id="@+id/tool"
+            android:title="Tools"
+            android:icon="@drawable/ic_launcher_background"/>
+    </group>
+
+    <item
+        android:title="communicate">
+        <menu>
+           <item
+               android:id="@+id/share"
+               android:title="Share"
+               android:icon="@drawable/share"/>
+            <item
+                android:id="@+id/send"
+                android:title="Send"
+                android:icon="@drawable/send"/>
+        </menu>
+    </item>
+
+</menu>
